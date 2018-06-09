@@ -1,0 +1,79 @@
+<div>
+  <style>
+  .dialog_box{
+    width: 400px;
+    max-width: 100%;
+    }
+/*    md-input-container{
+      margin-bottom: 0 !important;
+    }
+    md-content{
+      padding-bottom: 0 !important;
+    }*/
+  </style>
+
+<md-dialog class = "dialog_box">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h1>Game Characterstics</h1>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="close()">
+                    <i class="fa fa-times fa-lg"></i>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+          <md-tabs md-dynamic-height md-border-bottom>
+           <md-tab label="Mode"> 
+            <md-content >
+            <div class="md-dialog-content">
+                <h3>Game Mode:</h3>
+                <div>
+                     <md-switch ng-model="overflow" aria-label="Switch 2" ng-true-value="'overflow'" ng-false-value="'die hitting walls'" class="md-primary">
+                    Game Mode: {{overflow}}
+                  </md-switch>
+                </div>
+
+                <h3>Snake Speed:</h3>
+                <md-radio-group ng-model="speed" layout="row">
+
+                  <md-radio-button value="slow" class="md-primary">Slow</md-radio-button>
+                  <md-radio-button value="medium" class="md-primary"> Mediun </md-radio-button>
+                  <md-radio-button value="fast" class="md-primary">Fast</md-radio-button>
+
+                </md-radio-group>
+                <form>
+                  <!--   <md-content layout-padding>
+                    <md-input-container class="md-block start">
+                        <label>Time Duration in Seconds</label>
+                        <input type="number" ng-model="time">
+                    </md-input-container>
+                    </md-content>
+                    <p class="timeError hidden"><i class="fa fa-info-circle"></i><span class="timeMessage"></span></p>
+
+ -->
+                </form>
+            </div>
+            </md-content>
+         </md-tab>
+         <md-tab label="Instructions"> 
+            <md-content class="md-padding">
+
+            </md-content>
+         </md-tab>
+        </md-tabs> 
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">
+                Cancel
+            </md-button>
+            <md-button  md-no-ink class="md-primary" ng-click="confirmMode()">
+                Start Game
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
+</div>

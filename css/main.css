@@ -1,0 +1,130 @@
+html{
+	overflow: hidden;
+}
+body{
+	padding-top: 0px;
+	position: absolute;
+  width: 100%;
+}
+.header{
+  background: linear-gradient(white, #02D1F9);
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+.footer{
+  background: linear-gradient(white, #02D1F9);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 8px;
+    padding-left: 53px;
+    font-weight: bold;
+
+}
+#boundary{
+	width: 770px;  /*any 20 multiple + 10 due to border*/
+	height: 450px; /*20 multiple + 10 due to border*/
+	border-style: solid;
+	border-width: 5px;
+	border-color: blue;
+	margin-top: 45px; /*any 20 multiple - 5 due to border*/
+	margin-left: 55px; /*any 20 multiple - 5 due to border*/
+	position: relative;
+  background-color: black;
+}
+/*#boundary div:first-child{
+	background-color: green;
+}*/
+.internal{
+	margin: 0;
+	padding: 0;
+	background-color: red;
+	width: 20px;
+	height: 20px;
+	float: left;
+	position: absolute;
+  background-color: white;
+}
+
+#fruit{
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	position: absolute;
+  background-color: red;
+}
+
+.key{
+  background-color:#e0dcdc;
+  width:80px;
+  height:80px;
+  text-align:center;
+  font-size:2em;
+  line-height:80px;
+  border-radius: 13px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.row1 .key{
+  margin-left:85px;
+}
+.row2 .key{
+  float:left;
+}
+.keyboard{
+  text-align:center;
+  float: right;
+  position: absolute;
+  right: 9%;
+  top: 23%;
+}
+.scorediv{
+	float: right;
+  font-size: 4em;
+  position: absolute;
+  top: 52%;
+  right: 6%;
+}
+.playButton{
+	float: right;
+  position: absolute;
+  bottom: 18%;
+  right: 12%;
+}
+.playButton button{
+	font-size: 1.7em;
+    font-weight: bold;
+    padding: 5%;
+    width: 160px;
+    padding-right: 15%;
+}
+.pause-restart{
+	float: right;
+  position: absolute;
+  bottom: 18%;
+  right: 5%;
+}
+.pause-restart button{
+	font-size: 1.7em;
+    font-weight: bold;
+    padding: 2%;
+    width: 158px;
+}
+html.md-default-theme, html, body.md-default-theme, body {
+    color: rgba(0,0,0,0.87);
+    background-color: rgb(255, 255, 255);
+}
+md-dialog .md-dialog-content {
+    padding: 24px;
+    padding-top: 6px !important;
+/*.md-dialog-container{
+	position: absolute;
+	left: 28%;
+	top: -20%;
+}
+*/
