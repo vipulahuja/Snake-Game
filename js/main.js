@@ -84,11 +84,10 @@ var gameon=false;
                // $(".scorediv").css({"margin-top":"-27%", "margin-right":"-31%"});
                // $(".header").css("padding-right", "21%");
 
-
-
-
-								 $mdDialog.cancel();
-						 };
+				 $mdDialog.cancel();
+			 };
+			
+// 			Random comment here
         };
 
 
